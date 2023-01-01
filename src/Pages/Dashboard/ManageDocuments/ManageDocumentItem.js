@@ -40,7 +40,7 @@ const ManageDocumentItem = ({ document, documents, setDocuments }) => {
       },
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `http://localhost:5000/documents/${id}`;
+        const url = `https://financial-app-server-production.up.railway.app/documents/${id}`;
         axios
           .delete(url)
           .then((res) => {
@@ -70,7 +70,7 @@ const ManageDocumentItem = ({ document, documents, setDocuments }) => {
   const onSubmit = (data) => {
     console.log(data);
     setLoading(true);
-    const url = `http://localhost:5000/documents/${email}`;
+    const url = `https://financial-app-server-production.up.railway.app/documents/${email}`;
     axios
       .put(url, data)
       .then((res) => {

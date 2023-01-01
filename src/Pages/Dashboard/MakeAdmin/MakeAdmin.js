@@ -22,7 +22,7 @@ const MakeAdmin = () => {
   // load all users
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/users`)
+      .get(`https://financial-app-server-production.up.railway.app/users`)
       .then((res) => {
         setUsers(res.data);
       })
@@ -50,7 +50,7 @@ const MakeAdmin = () => {
     }
 
     // set admin role in database
-    const url = `http://localhost:5000/users/admin`;
+    const url = `https://financial-app-server-production.up.railway.app/users/admin`;
     axios
       .put(url, data)
       .then((res) => {

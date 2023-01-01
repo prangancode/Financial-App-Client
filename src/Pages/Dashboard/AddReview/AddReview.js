@@ -52,7 +52,10 @@ const AddReview = () => {
     // }
 
     axios
-      .post("http://localhost:5000/reviews", data)
+      .post(
+        "https://financial-app-server-production.up.railway.app/reviews",
+        data
+      )
       .then((res) => {
         // console.log(res);
         if (res.data.insertedId) {

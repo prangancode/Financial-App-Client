@@ -211,10 +211,10 @@ const useFirebase = () => {
   // observe user admin state
   useEffect(() => {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
-      // const url = `http://localhost:5000/users/${user?.email}`;
+      // const url = `https://financial-app-server-production.up.railway.app/users/${user?.email}`;
       if (user) {
         setUser(user);
-        const url = `http://localhost:5000/users/${user?.email}`;
+        const url = `https://financial-app-server-production.up.railway.app/users/${user?.email}`;
         axios
           .get(url)
           .then((res) => {
@@ -261,7 +261,7 @@ const useFirebase = () => {
   // save user to database
   const saveUserToDatabase = (email, displayName, method) => {
     const user = { email, displayName };
-    const url = `http://localhost:5000/users`;
+    const url = `https://financial-app-server-production.up.railway.app/users`;
     axios({
       method: method,
       url: url,

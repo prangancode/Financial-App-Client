@@ -13,7 +13,7 @@ const ContentTable = () => {
   useEffect(() => {
     setLoading(true);
     const email = user.email;
-    const url = `http://localhost:5000/documents/${email}`;
+    const url = `https://financial-app-server-production.up.railway.app/documents/${email}`;
     axios
       .get(url)
       .then((res) => {

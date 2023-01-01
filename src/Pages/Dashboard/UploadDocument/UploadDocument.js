@@ -74,7 +74,10 @@ const UploadDocument = () => {
     // }
 
     axios
-      .post("http://localhost:5000/documents", data)
+      .post(
+        "https://financial-app-server-production.up.railway.app/documents",
+        data
+      )
       .then((res) => {
         // console.log(res);
         if (res.data.insertedId) {

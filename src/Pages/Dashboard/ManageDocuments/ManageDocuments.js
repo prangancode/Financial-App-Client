@@ -12,7 +12,7 @@ const ManageDocuments = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:5000/documents")
+      .get("https://financial-app-server-production.up.railway.app/documents")
       .then((res) => {
         setDocuments(res.data);
         console.log(res.data);
