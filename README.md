@@ -6,8 +6,8 @@
 
 This is a financial website (clients to log in securely using Firebase Authentication and see their finance history).
 
-This project is deployed on Firebase. To visit the live website [click here]().\
-To login as a User use `testuser1@gmail.com` and `ABCD1234!` respectively for Username and Password.
+This project is deployed on Firebase. To visit the live website [click here](https://ionic-wealth-finance.firebaseapp.com/).\
+To login as a User use `testclient1@gmail.com` and `ABCD1234!` respectively for Username and Password.
 
 For the server-side repository [click here](https://github.com/prangancode/Financial-App-Server).
 
